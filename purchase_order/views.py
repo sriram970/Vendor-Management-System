@@ -4,7 +4,7 @@ from rest_framework.decorators import api_view
 
 
 @api_view(['POST', 'GET'])
-def create_or_list_all_purchase_orders():
+def create_or_list_all_purchase_orders(request):
     """
     This function used for creating and list all purchase orders
     """
@@ -12,7 +12,7 @@ def create_or_list_all_purchase_orders():
 
 
 @api_view(['PUT', 'GET', 'DELETE'])
-def get_or_edit_purchase_orders():
+def get_or_edit_purchase_orders(request):
     """
     This function used for get or edit or delete purchase orders.
     """
