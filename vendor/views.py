@@ -6,7 +6,6 @@ from django.http import JsonResponse
 def create_or_list_all_vendors(request):
     data = {}
     if request.method == 'POST':
-        
         pass
     
     elif request.method == 'GET':
