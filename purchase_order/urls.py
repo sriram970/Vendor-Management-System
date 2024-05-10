@@ -4,7 +4,7 @@ from purchase_order.views import create_or_list_all_purchase_orders, get_or_edit
 
 
 urlpatterns = [
-    path('purchase_orders/', create_or_list_all_purchase_orders),
+    path('purchase_orders', create_or_list_all_purchase_orders),
     path('purchase_orders/order', get_or_edit_purchase_orders)
 ]
 

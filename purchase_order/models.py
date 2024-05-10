@@ -7,8 +7,8 @@ from vendor.models import VendorModel
 class PurchaseOrder(models.Model):
     po_number = models.CharField(max_length=25, primary_key=True, unique=True)
     vendor = models.ForeignKey(VendorModel, on_delete=models.CASCADE)
-    order_date = models.DateTimeField()
-    delivery_date = models.DateTimeField()
+    order_date = models.DateTimeField(null=True, blank=True)
+    delivery_date = models.DateTimeField(null=True, blank=True)
     items = JSONField()
     quantity = models.IntegerField()
     status = models.CharField(max_length=255)
