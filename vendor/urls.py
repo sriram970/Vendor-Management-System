@@ -5,7 +5,7 @@ from vendor.views import create_or_list_all_vendors, get_or_edit_vendors
 
 urlpatterns = [
     path('vendors/', create_or_list_all_vendors),
-    path('vendors/<vendor_id:str>', get_or_edit_vendors),
+    path('vendors/<str:vendor_id>', get_or_edit_vendors),
 ]
 
 """

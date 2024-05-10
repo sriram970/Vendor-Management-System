@@ -1,9 +1,11 @@
 from django.urls import path, include
 
+from purchase_order.views import create_or_list_all_purchase_orders, get_or_edit_purchase_orders
+
 
 urlpatterns = [
-    path('purchase_orders'),
-    path('purchase_orders/<po_id:str>')
+    path('purchase_orders', create_or_list_all_purchase_orders),
+    path('purchase_orders/<str:po_id>', get_or_edit_purchase_orders)
 ]
 
 
